@@ -1,0 +1,38 @@
+# ── Git Repository Structure ─────────────────────────────
+# Sensitive environment files
+.env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build artifacts
+frontend/dist/
+backend/dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Coverage
+coverage/
+*/coverage/
+
+# Editor
+.DS_Store
+.vscode/
+*.swp
+
+# Uploads (blob storage, not code)
+backend/uploads/
+
+# Terraform state — stored in S3 backend
+infrastructure/terraform/.terraform/
+infrastructure/terraform/terraform.tfstate*
+infrastructure/terraform/*.tfvars
+
+# SSL certs (use secrets manager)
+infrastructure/nginx/ssl/

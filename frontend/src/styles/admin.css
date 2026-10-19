@@ -1,0 +1,83 @@
+/* ── Admin Page ─────────────────────────────────────────── */
+.admin-page { max-width: 1200px; margin: 0 auto; }
+
+.admin-table-card { padding: 1.5rem; overflow: hidden; }
+
+.admin-table-wrap { overflow-x: auto; margin-top: var(--space-md); }
+
+.admin-table {
+  width:           100%;
+  border-collapse: separate;
+  border-spacing:  0 6px;
+  font-size:       0.875rem;
+}
+
+.admin-table thead th {
+  text-align:    left;
+  padding:       0.5rem 1rem;
+  color:         var(--color-text-muted);
+  font-size:     0.75rem;
+  font-weight:   700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.admin-table tbody tr {
+  background:    rgba(30,41,59,0.3);
+  transition:    background var(--transition-fast);
+  border-radius: var(--radius-md);
+}
+
+.admin-table tbody tr:hover { background: rgba(99,102,241,0.06); }
+
+.admin-table tbody td {
+  padding:    0.875rem 1rem;
+  color:      var(--color-text-primary);
+  border-top: 1px solid rgba(99,102,241,0.08);
+  border-bottom: 1px solid rgba(99,102,241,0.08);
+}
+
+.admin-table tbody td:first-child { border-left: 1px solid rgba(99,102,241,0.08); border-radius: var(--radius-md) 0 0 var(--radius-md); }
+.admin-table tbody td:last-child  { border-right: 1px solid rgba(99,102,241,0.08); border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+
+.row-inactive { opacity: 0.55; }
+
+.user-cell { display: flex; align-items: center; gap: 8px; }
+
+.user-avatar-sm {
+  width:         32px; height: 32px;
+  background:    var(--gradient-primary);
+  border-radius: 50%;
+  display:       flex;
+  align-items:   center;
+  justify-content: center;
+  font-weight:   700;
+  font-size:     0.8rem;
+  color:         #fff;
+  flex-shrink:   0;
+}
+
+.user-name-cell { font-weight: 600; }
+.cell-muted     { color: var(--color-text-muted); font-size: 0.8125rem; }
+
+.action-btns {
+  display:     flex;
+  align-items: center;
+  gap:         var(--space-sm);
+  flex-wrap:   wrap;
+}
+
+.role-select {
+  padding:       0.35rem 0.6rem;
+  background:    var(--color-bg-tertiary);
+  border:        1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color:         var(--color-text-primary);
+  font-size:     0.8rem;
+  cursor:        pointer;
+  outline:       none;
+  transition:    border-color var(--transition-fast);
+}
+
+.role-select:focus { border-color: var(--color-indigo-500); }
